@@ -1,17 +1,15 @@
 package com.example.lab6;
 
 import org.springframework.amqp.core.*;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitDirect {
 
-    final static String directExchangeName = "SeleznevVA-direct-exchange-2103829";
-    final static String directQueueName = "SeleznevVA-direct-queue-2103829";
-    final static String routingKey = "2103829";
+    final static String directExchangeName = "SeleznevVA-direct-exchange-2111439";
+    final static String directQueueName = "SeleznevVA-direct-queue-2111439";
+    final static String routingKey = "1234";
 
     @Bean
     DirectExchange directExchange() {
