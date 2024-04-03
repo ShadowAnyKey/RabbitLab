@@ -22,12 +22,12 @@ public class Sender implements CommandLineRunner {
     public void run(String... args) throws Exception {
         int i = 0;
         while (true) {
-            System.out.printf("Iteration %d: Sending message to fanout exchange...\n", i);
-            rabbitTemplate.convertAndSend(fanoutExchangeName, "", "Fanout Exchange -> Seleznev V A 2103829 | Time: " + LocalTime.now());
-            System.out.printf("Iteration %d: Sending message to direct exchange...\n", i);
-            rabbitTemplate.convertAndSend(directExchangeName, routingKey, "Direct Exchange -> Seleznev V A 2103829 | Time: " + LocalTime.now());
+            System.out.printf("Итерация %d: Отправка соообщения в fanout обменник...\n", i);
+            rabbitTemplate.convertAndSend(fanoutExchangeName, "", "Fanout обменник -> Seleznev V A 2111439");
+            System.out.printf("Итерация %d: Отправка соообщения в direct обменник...\n", i);
+            rabbitTemplate.convertAndSend(directExchangeName, routingKey, "Direct обменник -> Seleznev V A 2111439");
             i++;
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         }
     }
 }
