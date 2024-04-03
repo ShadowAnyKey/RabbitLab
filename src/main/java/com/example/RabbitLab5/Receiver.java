@@ -1,10 +1,7 @@
-package com.example.lab6;
+package com.example.RabbitLab5;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalDate;
-import java.time.LocalTime;
 
 @Component
 public class Receiver {

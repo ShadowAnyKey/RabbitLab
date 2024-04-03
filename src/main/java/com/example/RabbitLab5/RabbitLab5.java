@@ -1,6 +1,5 @@
-package com.example.lab6;
+package com.example.RabbitLab5;
 
-import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -9,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class Lab6Application {
+public class RabbitLab5 {
 	static final String rabbitHost = "localhost";
 	static final String rabbitUser= "guest";
 	static final String rabbitPassword = "guest";
@@ -31,6 +30,6 @@ public class Lab6Application {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lab6Application.class, args);
+		SpringApplication.run(RabbitLab5.class, args);
 	}
 }

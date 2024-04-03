@@ -1,4 +1,4 @@
-package com.example.lab6;
+package com.example.RabbitLab5;
 
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;

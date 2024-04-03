@@ -1,10 +1,8 @@
-package com.example.lab6;
+package com.example.RabbitLab5;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.time.LocalTime;
 
 @Component
 public class Sender implements CommandLineRunner {
